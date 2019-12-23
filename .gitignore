@@ -1,0 +1,5 @@
+
+
+##jupyter notebooks
+*.ipynb
+*.DS_Store
