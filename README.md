@@ -15,21 +15,20 @@ I figured it be easiest / user-friendliest if transactions are stored in an exte
 Transation data is sourced from `transaction/transactions.xlsx`. So make sure you enter your intended data there. The spreadsheet has a tab for every format. 
 
 The general workflow is as follows:
-1. instantiate a `Statement` Object
-example:
+1. instantiate a `Statement` Object \
+*Example:*
 ```python 
    unit = core.Statement(bank_code=bank_code, acc_no=account_no, opening_date=opening_date,
                           opening_balance=opening_balance,
                           currency=currency)
 ```
-2. from there you can create multiple statements depending on the information provided in step 1) by using the `generate_*` methods
-example:
+2. from there you can create multiple statements depending on the information provided in step 1) by using the `generate_*` methods \
+*Example:*
 ```python
     unit.generate_mt942()
 ```
-3. create a text-file to be used
-example:
-
+3. create a text-file to be used \
+*Example:*
 ```python
     unit.generate_file()
 ```
